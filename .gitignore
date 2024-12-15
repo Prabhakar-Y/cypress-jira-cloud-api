@@ -1,0 +1,60 @@
+# Node.js files
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.tmp/
+.temp/
+
+# Cypress specific 
+cypress/screenshots/
+cypress/videos/
+.cypress_cache/
+cypress.env.json
+
+
+# Mochawesome Reports
+mochawesome-report/
+*.json
+*.html
+*.xml
+
+# Docker Files
+*.dockerfile
+.dockerignore
+.cache/
+docker-compose.override.yml
+
+# Reports
+reports/
+
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+secret.json
+private.key
+
+# IDE files
+.vscode/
+*.code-workspace
+.idea/
+out/
+*.swp
+*.bak
+*.tmp
+
+# OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+*~
+.nfs*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
