@@ -81,12 +81,12 @@ To execute tests locally:
 
 1. Build the Docker image:
    ```bash
-   docker build -t cypress-jira-api .
+   docker build --no-cache -t cypress-jira-api -f docker/Dockerfile .
    ```
 
 2. Run the container:
    ```bash
-   docker run --rm cypress-jira-api
+   docker run -v $(pwd)/mochawesome-report:/app/cypress/mochawesome-report cypress-jira-api:latest
    ```
 
 ## Generating Reports - Mochawesome
